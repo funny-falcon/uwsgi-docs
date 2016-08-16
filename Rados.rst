@@ -97,6 +97,7 @@ the 'rados-mount' parameter takes various subparameters:
  - allow_propfind: (requires uWSGI 2.1) allow calling the WebDAV ``PROPFIND`` method
  - buffer_size: maximum buffer size for ``GET`` requests in bytes (min 8192, max 16777216, default to 131072)
  - put_buffer_size: maximum buffer size for ``PUT`` requests (default to buffer_size)
+ - namespace: rados pool namespace. If librados is too old, then non-empty namespace is error.
 
 In this example, your content will be served at http://localhost:9090/rad/list.html, http://localhost:9090/rad/imgs/first.jpeg
 and http://localhost:9090/rad/imgs/second.jpeg.
